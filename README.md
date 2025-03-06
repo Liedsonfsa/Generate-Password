@@ -4,6 +4,7 @@ A password generator package
 
 ## Package functions
 
+`password/generate_password.go`
 ```Go
 // Generate generate a password
 func Generate() string {
@@ -30,10 +31,22 @@ func Generate() string {
 }
 ```
 
+`password/check_password.go`
+```Go
+// CheckPassword check if the password is secure
+func CheckPassword(password string) bool {
+	if hasUpperCase(password) && hasLowerCase(password) && hasNumber(password) && hasEspecials(password) {
+		return true
+	}
+
+	return false
+}
+```
+
 ## Downloading package
 
 ```bash
-go get -u github.com/Liedsonfsa/Generate-Password@v0.0.1
+go get -u github.com/Liedsonfsa/Generate-Password@v0.1.1
 ```
 
 ## Importing the package
@@ -53,5 +66,7 @@ import (
 
 func main() {
 	generatedPassword := password.Generate()
+
+	secure := password.CheckPassword(generatedPassword)
 }
 ```
