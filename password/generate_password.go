@@ -27,7 +27,7 @@ func Generate() string {
 }
 
 func upperCase() byte {
-	var upper string = "ZXCVBNMLSKDJFHGPOQWIEURYT"
+	var upper string = "ZXCVBNMLSKDJFHGPOQWIEURYTA"
 	index := rand.Intn(len(upper))
 
 	return byte(upper[index]) 

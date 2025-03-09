@@ -60,9 +60,7 @@ import "github.com/Liedsonfsa/Generate-Password/password"
 ```Go
 package main
 
-import (
-	"github.com/Liedsonfsa/Generate-Password/password"
-)
+import "github.com/Liedsonfsa/Generate-Password/password"
 
 func main() {
 	generatedPassword := password.Generate()

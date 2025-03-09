@@ -12,7 +12,7 @@ func CheckPassword(password string) bool {
 }
 
 func hasUpperCase(password string) bool {
-	var upper string = "ZXCVBNMLSKDJFHGPOQWIEURYT"
+	var upper string = "ZXCVBNMLSKDJFHGPOQWIEURYTA"
 	return strings.ContainsAny(password, upper)
 }
 
