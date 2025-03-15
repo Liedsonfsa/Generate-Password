@@ -1,5 +1,10 @@
 # Generate Password
 
+![Infos](https://img.shields.io/static/v1?label=language&message=Go&color=blue)
+![Infos](https://img.shields.io/static/v1?label=version&message=0.0.2&color=blue)
+![Infos](https://img.shields.io/github/stars/Liedsonfsa/Generate-Password)
+![Infos](https://img.shields.io/github/license/Liedsonfsa/Generate-Password)
+
 A password generator package
 
 ## Package functions
@@ -46,7 +51,7 @@ func CheckPassword(password string) bool {
 ## Downloading package
 
 ```bash
-go get -u github.com/Liedsonfsa/Generate-Password@v0.1.1
+go get -u github.com/Liedsonfsa/Generate-Password@v0.0.2
 ```
 
 ## Importing the package
